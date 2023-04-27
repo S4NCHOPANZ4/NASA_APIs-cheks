@@ -1,0 +1,159 @@
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .sub_1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 930px) {
+  .container .sub_1 {
+    flex-direction: column;
+  }
+}
+.container .sub_1 .container_img {
+  height: 360px;
+  width: 600px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.container .sub_1 .container_img .image {
+  margin-right: 10px;
+  width: 100%; /* set the width of the image to fill the container */
+  height: 100%; /* set the height of the image to fill the container */
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 930px) {
+  .container .sub_1 .container_img .image {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .container .sub_1 .container_img {
+    width: 110%;
+    height: 300px;
+    margin-top: 200px;
+  }
+}
+.container .sub_1 .img_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 400px;
+  min-width: 300px;
+  height: 360px;
+  padding: 10px;
+}
+@media only screen and (max-width: 930px) {
+  .container .sub_1 .img_description {
+    height: auto;
+  }
+}
+.container .sub_1 .img_description .img_title {
+  font-size: 1.8rem;
+}
+@media only screen and (max-width: 930px) {
+  .container .sub_1 .img_description .img_title {
+    font-size: 1.2rem;
+  }
+}
+.container .sub_1 .img_description .img_desc_title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+@media only screen and (max-width: 930px) {
+  .container .sub_1 .img_description .img_desc_title {
+    font-size: 1rem;
+  }
+}
+.container .sub_1 .img_description .description {
+  background-color: #f5f5f5;
+  font-weight: 300;
+  font-size: 0.9rem;
+  overflow-y: auto;
+  padding: 1rem 1.5rem;
+  border-radius: 2px;
+  min-height: 200px;
+  max-height: 200px;
+  text-align: justify;
+  scrollbar-width: thin;
+}
+@media only screen and (max-width: 930px) {
+  .container .sub_1 .img_description .description {
+    font-size: 0.8rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  width: 85%;
+}
+@media only screen and (max-width: 930px) {
+  .form {
+    width: 100%;
+    padding: 0px;
+    background-color: #ffffff;
+  }
+}
+.form .form_inputs {
+  width: 50%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.upper_inputs {
+  display: none;
+}
+@media only screen and (max-width: 930px) {
+  .upper_inputs {
+    display: flex;
+  }
+}
+
+.lower_inputs {
+  display: flex;
+}
+@media only screen and (max-width: 930px) {
+  .lower_inputs {
+    display: none;
+  }
+}
+
+label {
+  font-weight: 300;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 930px) {
+  label {
+    font-size: 0.8rem;
+  }
+}
+
+.submit_button {
+  margin-top: 10px;
+}
+
+.apod_loading_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=apod.css.map */

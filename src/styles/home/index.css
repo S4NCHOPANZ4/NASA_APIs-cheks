@@ -1,0 +1,135 @@
+.home_cont {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(16, 16, 16);
+  display: flex;
+}
+@media only screen and (max-width: 832px) {
+  .home_cont {
+    flex-direction: column;
+  }
+}
+.home_cont .home_subcont {
+  width: 33.33%;
+  height: 100%;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 832px) {
+  .home_cont .home_subcont {
+    width: 100%;
+  }
+}
+.home_cont .home_subcont:hover > .home_innersub {
+  transform: translateY(100%);
+}
+.home_cont .home_sub_1 {
+  background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.66), rgba(0, 0, 0, 0.728)), url("https://apod.nasa.gov/apod/image/1709/ConjuncionViaLacteaHumanoVenusLuna_Jaramillo.jpg");
+  background-position: center;
+}
+.home_cont .home_sub_2 {
+  background-image: linear-gradient(to bottom, rgba(3, 3, 3, 0.642), rgba(0, 0, 0, 0.728)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/AS16-118-18885.jpg/1200px-AS16-118-18885.jpg");
+  background-position: center;
+}
+.home_cont .home_sub_3 {
+  background-image: linear-gradient(to bottom, rgba(63, 63, 63, 0.721), rgba(0, 0, 0, 0.728)), url("https://static.vecteezy.com/system/resources/previews/014/989/719/original/question-mark-hand-drawn-doodle-faq-symbol-free-vector.jpg");
+  background-position: center;
+}
+
+.home_innersub {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: auto;
+  background-color: rgb(62, 62, 62);
+  transition: transform 300ms;
+}
+
+.home_title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.home_desc {
+  width: 60%;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+@media only screen and (max-width: 832px) {
+  .home_desc {
+    display: none;
+  }
+}
+
+.dicover_button {
+  width: 150px;
+  background-color: rgb(16, 16, 16);
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.dicover_button:hover {
+  background-color: #515151;
+  border-color: #ffffff;
+}
+
+.home_under {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home_under .home_discover_title {
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.upperlayer_button {
+  display: none;
+  background-color: rgba(81, 81, 81, 0.4549019608);
+}
+@media only screen and (max-width: 832px) {
+  .upperlayer_button {
+    display: block;
+  }
+}
+
+.lowerlayer_title {
+  display: block;
+}
+@media only screen and (max-width: 832px) {
+  .lowerlayer_title {
+    display: none;
+  }
+}
+
+.lowerlayer_desc {
+  display: none;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 832px) {
+  .lowerlayer_desc {
+    display: block;
+  }
+}/*# sourceMappingURL=index.css.map */

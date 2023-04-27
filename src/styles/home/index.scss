@@ -1,0 +1,138 @@
+$background_1: 'https://apod.nasa.gov/apod/image/1709/ConjuncionViaLacteaHumanoVenusLuna_Jaramillo.jpg';
+$background_2: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/AS16-118-18885.jpg/1200px-AS16-118-18885.jpg';
+$background_3: 'https://static.vecteezy.com/system/resources/previews/014/989/719/original/question-mark-hand-drawn-doodle-faq-symbol-free-vector.jpg';
+
+@import '../media_queries.scss';
+
+
+
+.home_cont{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    @include mq-medium {
+        flex-direction: column;
+    }  
+    .home_subcont{
+        width: 33.33%;
+        height: 100%;
+        z-index: 0;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mq-medium {
+            width: 100%;
+
+        } 
+      
+        &:hover{
+            & > .home_innersub{
+                transform: translateY(100%);
+            }
+        }
+    }
+    .home_sub_1{
+        background-image:
+        linear-gradient(to bottom, rgba(41, 41, 41, 0.66), rgba(0, 0, 0, 0.728)),
+        url($background_1);
+        background-position: center;
+      
+    }
+    .home_sub_2{
+        background-image:
+        linear-gradient(to bottom, rgba(3, 3, 3, 0.642), rgba(0, 0, 0, 0.728)),
+        url($background_2);
+        background-position: center;
+     
+    }
+    .home_sub_3{
+        background-image:
+        linear-gradient(to bottom, rgba(63, 63, 63, 0.721), rgba(0, 0, 0, 0.728)),
+        url($background_3);
+        background-position: center;
+    }
+}
+.home_innersub{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: auto;
+    background-color: rgb(62, 62, 62);
+    transition: transform 300ms;
+}   
+.home_title{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.home_desc{
+    width: 60%;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+      @include mq-medium {
+        display: none;
+    }  
+
+}
+
+.dicover_button {
+    width: 150px;
+    background-color: rgb(16, 16, 16);
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  .dicover_button:hover {
+    background-color: #515151;
+    border-color: #ffffff;
+  }
+
+.home_under{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .home_discover_title{
+        font-weight: 100;
+        color: #ffffff;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+.upperlayer_button{
+    display: none;
+    background-color: #51515174;
+    @include mq-medium {
+        display: block;
+    }  
+}
+
+.lowerlayer_title{
+    display: block;
+    @include mq-medium {
+        display: none;
+    }  
+}
+.lowerlayer_desc{
+    display: none;
+    margin-bottom: 10px;
+    @include mq-medium {
+        display: block;
+    }
+}

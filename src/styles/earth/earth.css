@@ -1,0 +1,141 @@
+.earth_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.input_cont p {
+  text-align: right;
+}
+@media only screen and (max-width: 930px) {
+  .input_cont p {
+    font-size: 0.8rem;
+  }
+}
+
+.earth_input_container {
+  position: absolute;
+  z-index: 0;
+  left: 10%;
+  bottom: 10%;
+  background-color: rgba(255, 255, 255, 0.749);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 930px) {
+  .earth_input_container {
+    top: 10%;
+    bottom: auto;
+  }
+}
+.earth_input_container input {
+  margin: 0;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+.earth_input_container button {
+  background-color: black;
+  margin-top: 10px;
+  color: white;
+}
+
+.earth_img_container {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(43, 43, 43, 0.92);
+}
+
+.earth_img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 1000px) {
+  .earth_img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.earth_map_container {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  height: 300px;
+  width: 400px;
+}
+
+.img_loading {
+  background-color: rgba(255, 255, 255, 0.749);
+}
+
+.img_not_found {
+  padding: 10px;
+}
+.img_not_found .notFound_title {
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+}
+@media only screen and (max-width: 930px) {
+  .img_not_found .notFound_title {
+    font-size: 2rem;
+  }
+}
+.img_not_found .notFound_description {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media only screen and (max-width: 930px) {
+  .img_not_found .notFound_description {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .img_not_found {
+    position: absolute;
+    top: 30%;
+  }
+}
+
+.earth_alert {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  background-color: rgba(0, 0, 0, 0.717);
+  width: 300px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.earth_alert p {
+  justify-content: center;
+  color: white;
+}
+.earth_alert .closing {
+  color: white;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+}
+@media only screen and (max-width: 930px) {
+  .earth_alert {
+    position: absolute;
+    top: 10%;
+  }
+}/*# sourceMappingURL=earth.css.map */
