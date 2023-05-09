@@ -45,23 +45,7 @@ const Home = () => {
             </div>
 
         </div>
-        <div className='home_subcont'>
-        <div className='home_under'>
-                <p className='home_discover_title lowerlayer_title'>Let's Discover</p>
-                <p className='home_desc lowerlayer_desc'>     Astronomy Picture of the Day is a website provided by NASA and Michigan Technological University.
-                According to the website, "Each day a different image or photograph of our universe is featured,
-                along with a brief explanation written by a professional astronomer."</p>
-                <Link to='/mars'>
-                    <button className='dicover_button lowerlayer_button'>GO!</button>
-                </Link>
-            </div>
-            <div className='home_innersub home_sub_3'>
-                <p className='home_title'>Unknown</p>
-                <Link to='/mars'>
-                    <button className='dicover_button upperlayer_button'>Let's Discover</button>
-                </Link>
-            </div>
-        </div>
+        
     </div>
   )
 }
